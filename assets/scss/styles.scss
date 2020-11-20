@@ -6,6 +6,7 @@ body {
   height: 100vh;
   width: 100vw;
   font-family: 'Titillium Web', sans-serif;
+  background: url('https://meshgradient.com/gallery/11.png') center/ cover no-repeat;
 }
 
 .pageload {
@@ -27,30 +28,18 @@ header {
     width: 85%;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     h1 {
-      color: #000;
-      font-size: 2.5rem;
+      color: #fff;
+      font-size: 4rem;
       font-family: 'Lobster', cursive;
-    }
-    ul {
-      color: #000;
-      display: flex;
-      
-      .nav-item a {
-         padding: 0 30px;
-         font-size: 1.2rem;
-         font-weight: 600;
-         color: #000;
-         text-decoration: none;
-      }
     }
   }
 }
 
 #main {
-  height: 80vh;
+  height: 70vh;
   width: 100%;
   .search-box {
     display: grid;
@@ -75,12 +64,16 @@ header {
       }
     }
     button {
-      grid-area: 5 / 3 / 6 / 4;
+      grid-area: 5 / 2 / 6 / 5;
       height: 50px;
-      width: 100%;
-      font-size: 1.4rem;
+      width: 80%;
+      font-size: 1.7rem;
       font-family: 'Lobster', cursive;
-      margin-top: 30px;
+      margin: 30px 40px 0 40px;
+      border-radius: 20px;
+      background: #fcba03;
+      border: none;
+      cursor: pointer;
     }
     .picbox1 {
       grid-area: 3 / 6 / 7 / 9;
@@ -90,10 +83,11 @@ header {
       }
     }
     .feet {
-      grid-area: 8 / 6 / 9 / 8;
-      border: 1px solid black;
+      grid-area: 7 / 5 / 8 / 7;
+      border-bottom: 1px solid black;
       width: 70%;
       height: 50%;
+      color: #fff;
       h3 {
         font-size: 2rem;
         font-weight: 500;
@@ -103,15 +97,17 @@ header {
         float: right;
         height: 40px;
         width: 10px;
-        margin: 10px 20px 0 0;
-        border-bottom: black;
+        font-size: 1.4rem;
+        font-weight: 600;
+        margin: 7px 20px 0 0;
       }
     }
     .inches {
-      grid-area: 8 / 8 / 9 / 10;
-      border: 1px solid black;
+      grid-area: 7 / 7 / 8 / 9;
+      border-bottom: 1px solid black;
       width: 70%;
       height: 50%;
+      color: #fff;
       h3 {
         font-size: 2rem;
         font-weight: 500;
@@ -121,15 +117,18 @@ header {
         float: right;
         height: 40px;
         width: 10px;
-        margin: 10px 20px 0 0;
+        font-size: 1.4rem;
+        font-weight: 600;
+        margin: 7px 20px 0 0;
         border-bottom: black;
       }
     }
     .weight { 
-      grid-area: 9 / 6 / 10 / 8;
-      border: 1px solid black;
+      grid-area: 8 / 5 / 9 / 7;
+      border-bottom: 1px solid black;
       width: 70%;
       height: 50%;
+      color: #fff;
       h3 {
         font-size: 2rem;
         font-weight: 500;
@@ -139,15 +138,18 @@ header {
         float: right;
         height: 40px;
         width: 10px;
-        margin: 10px 20px 0 0;
+        font-size: 1.4rem;
+        font-weight: 600;
+        margin: 7px 20px 0 0;
         border-bottom: black;
       }
     }
     .position {
-      grid-area: 9 / 8 / 10 / 10;
-      border: 1px solid black;
+      grid-area: 8 / 7 / 9 / 9;
+      border-bottom: 1px solid black;
       width: 70%;
       height: 50%;
+      color: #fff;
       h3 {
         font-size: 2rem;
         font-weight: 500;
@@ -157,7 +159,9 @@ header {
         float: right;
         height: 40px;
         width: 10px;
-        margin: 10px 20px 0 0;
+        font-size: 1.4rem;
+        font-weight: 600;
+        margin: 7px 20px 0 0;
         border-bottom: black;
       }
     }

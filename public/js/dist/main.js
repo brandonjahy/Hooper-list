@@ -3,6 +3,7 @@
 const searchBar = document.querySelector('.playerbox');
 
 
+
 // API request 
 
 $(function () {
