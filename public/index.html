@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Gamer views</title>
+    <title>Movie views</title>
     
     <link rel="manifest" href="/manifest.json">
     <link rel="stylesheet" href="/css/styles.css">
@@ -9,10 +9,36 @@
     <script async="" defer="" src="https://buttons.github.io/buttons.js"></script>
   </head>
   <body>
-    <div class="pageload">
-
+    <div class="pageload"></div>
+    <header>
+      <nav>
+        <h1 class="logo">Movie views</h1>
+        <ul class="navlinks">
+          <li class="nav-item"><a href="#">Home</a></li>
+          <li class="nav-item"><a href="#">Upcoming</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="search-box">
+      <input class="playerbox" type="text" placeholder="name a nba player">
+      <button class="btn">test ajax</button>
+    </div>
+    <div class="imagebox">
+      <input class="nbaimagebox" type="text" placeholder="last name/first name">
+      <button class="btn1">test other api</button>
+      <div class="picbox">
+        <img src="https://nba-players.herokuapp.com/players/curry/stephen" alt="">
+      </div>
+    </div>
+    <div class="img-block">
+      <h1>hey</h1>
+      <div class="block"></div>
     </div>
     
+
+    <script src="https://cdn.jsdelivr.net/npm/@barba/core@2.9.7/dist/barba.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/js/dist/gsap.min.js"></script>
     <script src="/js/dist/main.js"></script>
     <script src="/js/dist/animation.js"></script>
   </body>

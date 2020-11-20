@@ -1,15 +1,67 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700");
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Titillium+Web:wght@300;400;600;700&display=swap');
 @import "reset";
 
 
-
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Titillium Web', sans-serif;
+}
 
 .pageload {
-  background: url('https://cdn.dribbble.com/users/30012/screenshots/7193645/media/c2099b7e5dcd82b98eb690b0aaa2e36c.gif') center/ cover no-repeat;
+  background: url('https://cdn.dribbble.com/users/546766/screenshots/4044552/greencircle.gif') center/ cover no-repeat;
   position: fixed;
   top: 0;
   left: 0;
   height: 100vh;
   width: 100vw;
+  transform: translate(0, 100%);
+}
+
+header {
+  height: 7vh;
+  width: 100%;
+  margin-top: 10px;
+  nav {
+    height: 100%;
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h1 {
+      color: #000;
+      font-size: 2.5rem;
+      font-family: 'Lobster', cursive;
+    }
+    ul {
+      color: #000;
+      display: flex;
+      
+      .nav-item a {
+         padding: 0 30px;
+         font-size: 1.2rem;
+         font-weight: 600;
+         color: #000;
+         text-decoration: none;
+      }
+    }
+  }
+}
+
+.picbox {
+  height: 200px;
+  width: 200px;
+  border: 1px solid black;
+}
+
+img-block {
   
+
+
+  .block {
+    height: 200px;
+    width: 200px;
+    background: #000;;
+  }
 }
