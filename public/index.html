@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Movie views</title>
+    <title>Hooper List</title>
     
     <link rel="manifest" href="/manifest.json">
     <link rel="stylesheet" href="/css/styles.css">
@@ -12,28 +12,42 @@
     <div class="pageload"></div>
     <header>
       <nav>
-        <h1 class="logo">Movie views</h1>
+        <h1 class="logo">Hooper List</h1>
         <ul class="navlinks">
           <li class="nav-item"><a href="#">Home</a></li>
-          <li class="nav-item"><a href="#">Upcoming</a></li>
         </ul>
       </nav>
     </header>
-    <div class="search-box">
-      <input class="playerbox" type="text" placeholder="name a nba player">
-      <button class="btn">test ajax</button>
-    </div>
-    <div class="imagebox">
-      <input class="nbaimagebox" type="text" placeholder="last name/first name">
-      <button class="btn1">test other api</button>
-      <div class="picbox">
-        <img src="https://nba-players.herokuapp.com/players/curry/stephen" alt="">
+    <section id="main">
+      <div class="search-box">
+        <div class="firstName">
+          <input class="playerbox" type="text" placeholder="name a nba player first name">
+        </div>
+        <div class="lastName">
+          <input class="playerbox1" type="text" placeholder="name a nba player last name">
+        </div>
+        <button class="btn">Call Player</button>
+        <div class="picbox1">
+          <img class="playerimg" src="https://nba-players.herokuapp.com/players/curry/stephen" alt="">
+        </div>
+        <div class="feet">
+          <h3>Feet</h3>
+          <h6 class="val1"></h6>
+        </div>
+        <div class="inches">
+          <h3>Inches</h3>
+          <h6 class="val"></h6>
+        </div>
+        <div class="weight">
+          <h3>Weight</h3>
+          <h6 class="val"></h6>
+        </div>
+        <div class="position">
+          <h3>Position</h3>
+          <h6 class="val"></h6>
+        </div>
       </div>
-    </div>
-    <div class="img-block">
-      <h1>hey</h1>
-      <div class="block"></div>
-    </div>
+    </section>
     
 
     <script src="https://cdn.jsdelivr.net/npm/@barba/core@2.9.7/dist/barba.umd.min.js"></script>

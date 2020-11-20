@@ -49,19 +49,118 @@ header {
   }
 }
 
-.picbox {
-  height: 200px;
-  width: 200px;
-  border: 1px solid black;
-}
-
-img-block {
-  
-
-
-  .block {
-    height: 200px;
-    width: 200px;
-    background: #000;;
+#main {
+  height: 80vh;
+  width: 100%;
+  .search-box {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;  
+    .firstName{
+      grid-area: 3 / 2 / 4 / 5;
+      .playerbox{
+        height: 70px;
+        width: 100%;
+        font-size: 2rem;
+      }
+    }
+    .lastName {
+      grid-area: 4 / 2 / 5 / 5;
+      .playerbox1{
+        height: 70px;
+        width: 100%;
+        font-size: 2rem;
+      }
+    }
+    button {
+      grid-area: 5 / 3 / 6 / 4;
+      height: 50px;
+      width: 100%;
+      font-size: 1.4rem;
+      font-family: 'Lobster', cursive;
+      margin-top: 30px;
+    }
+    .picbox1 {
+      grid-area: 3 / 6 / 7 / 9;
+      .playerimg {
+        position: absolute;
+        z-index: 5;
+      }
+    }
+    .feet {
+      grid-area: 8 / 6 / 9 / 8;
+      border: 1px solid black;
+      width: 70%;
+      height: 50%;
+      h3 {
+        font-size: 2rem;
+        font-weight: 500;
+        float: left;
+      }
+      h6 {
+        float: right;
+        height: 40px;
+        width: 10px;
+        margin: 10px 20px 0 0;
+        border-bottom: black;
+      }
+    }
+    .inches {
+      grid-area: 8 / 8 / 9 / 10;
+      border: 1px solid black;
+      width: 70%;
+      height: 50%;
+      h3 {
+        font-size: 2rem;
+        font-weight: 500;
+        float: left;
+      }
+      h6 {
+        float: right;
+        height: 40px;
+        width: 10px;
+        margin: 10px 20px 0 0;
+        border-bottom: black;
+      }
+    }
+    .weight { 
+      grid-area: 9 / 6 / 10 / 8;
+      border: 1px solid black;
+      width: 70%;
+      height: 50%;
+      h3 {
+        font-size: 2rem;
+        font-weight: 500;
+        float: left;
+      }
+      h6 {
+        float: right;
+        height: 40px;
+        width: 10px;
+        margin: 10px 20px 0 0;
+        border-bottom: black;
+      }
+    }
+    .position {
+      grid-area: 9 / 8 / 10 / 10;
+      border: 1px solid black;
+      width: 70%;
+      height: 50%;
+      h3 {
+        font-size: 2rem;
+        font-weight: 500;
+        float: left;
+      }
+      h6 {
+        float: right;
+        height: 40px;
+        width: 10px;
+        margin: 10px 20px 0 0;
+        border-bottom: black;
+      }
+    }
   }
+
 }
